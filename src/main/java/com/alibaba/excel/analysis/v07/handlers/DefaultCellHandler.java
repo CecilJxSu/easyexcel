@@ -1,24 +1,5 @@
 package com.alibaba.excel.analysis.v07.handlers;
 
-import static com.alibaba.excel.constant.ExcelXmlConstants.CELL_DATA_FORMAT_TAG;
-import static com.alibaba.excel.constant.ExcelXmlConstants.CELL_FORMULA_TAG;
-import static com.alibaba.excel.constant.ExcelXmlConstants.CELL_INLINE_STRING_VALUE_TAG;
-import static com.alibaba.excel.constant.ExcelXmlConstants.CELL_TAG;
-import static com.alibaba.excel.constant.ExcelXmlConstants.CELL_VALUE_TAG;
-import static com.alibaba.excel.constant.ExcelXmlConstants.CELL_VALUE_TYPE_TAG;
-
-import java.math.BigDecimal;
-import java.util.Deque;
-import java.util.LinkedList;
-import java.util.Map;
-import java.util.TreeMap;
-
-import org.apache.poi.ss.usermodel.BuiltinFormats;
-import org.apache.poi.xssf.model.StylesTable;
-import org.apache.poi.xssf.usermodel.XSSFCellStyle;
-import org.apache.poi.xssf.usermodel.XSSFRichTextString;
-import org.xml.sax.Attributes;
-
 import com.alibaba.excel.analysis.v07.XlsxCellHandler;
 import com.alibaba.excel.analysis.v07.XlsxRowResultHolder;
 import com.alibaba.excel.constant.ExcelXmlConstants;
@@ -27,6 +8,19 @@ import com.alibaba.excel.enums.CellDataTypeEnum;
 import com.alibaba.excel.metadata.CellData;
 import com.alibaba.excel.util.BooleanUtils;
 import com.alibaba.excel.util.PositionUtils;
+import org.apache.poi.ss.usermodel.BuiltinFormats;
+import org.apache.poi.xssf.model.StylesTable;
+import org.apache.poi.xssf.usermodel.XSSFCellStyle;
+import org.apache.poi.xssf.usermodel.XSSFRichTextString;
+import org.xml.sax.Attributes;
+
+import java.math.BigDecimal;
+import java.util.Deque;
+import java.util.LinkedList;
+import java.util.Map;
+import java.util.TreeMap;
+
+import static com.alibaba.excel.constant.ExcelXmlConstants.*;
 
 /**
  * Cell Handler
